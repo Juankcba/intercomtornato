@@ -7,12 +7,13 @@
     <title> Blade Link Intercom</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ static_url("bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{ static_url("app.css")}}">
-    
+
 
 
 
@@ -21,50 +22,28 @@
 <body>
     <header class="py-5 ">
         <h1 class="text-center">
-            Blade Link 
+            Blade Link
             <span class="text-primary"> Intercom</span>
         </h1>
     </header>
     <div class="border-top py-4">
-        <div class="navbar navbar-expand-lg container navbar-light ">
-            <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="/">
-                Blade Link Intercom
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-       
-            <div id="navegacion" class="collapse navbar-collapse">
-                <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
-                    <a class="text-dark text-decoration-none" href="/">Inicio</a>
-                   
-                   
-                </nav>
-            </div>
-        </div>
-    </div>
-
-    <div>
         <!-- LEDs -->
-        <h1>Web Socket IO</h1>
+        <h1>Control de Dispositivos</h1>
 
-
-        <button id="green_off" class="button button5">OFF</button>
-        <button id="green_on" class="button button1">ON</button>
-        <br>
-        <button id="blue_off" class="button button5">OFF</button>
-        <button id="blue_on" class="button button2">ON</button>
-        <br>
-        <button id="red_off" class="button button5">OFF</button>
-        <button id="red_on" class="button button3">ON</button>
-        <br>
-        <button id="white_off" class="button button5">OFF</button>
-        <button id="white_on" class="button button4">ON</button>
-
-        <hr>
-        Websocket status:
-        <br>
-        <div id="ws-status"> Waiting... </div>
+        <div class="card">
+            <button id="green_off" class="">OFF</button>
+            <button id="green_on" class="">ON</button>
+            <br>
+            <button id="blue_off" class="">OFF</button>
+            <button id="blue_on" class="">ON</button>
+            <br>
+            <button id="red_off" class="">OFF</button>
+            <button id="red_on" class="">ON</button>
+            <hr>
+            Websocket status:
+            <br>
+            <div id="ws-status"> Waiting... </div>
+        </div>
 
         <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
