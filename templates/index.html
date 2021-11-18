@@ -29,21 +29,28 @@
     <div class="border-top py-4">
         <!-- LEDs -->
         <h1>Control de Dispositivos</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <button id="green_off" class="">OFF</button>
+                        <button id="green_on" class="">ON</button>
+                        <br>
+                        <button id="blue_off" class="">OFF</button>
+                        <button id="blue_on" class="">ON</button>
+                        <br>
+                        <button id="red_off" class="">OFF</button>
+                        <button id="red_on" class="">ON</button>
+                        <hr>
+                        Websocket status:
+                        <br>
+                        <div id="ws-status"> Waiting... </div>
+                    </div>
+                </div>
 
-        <div class="card">
-            <button id="green_off" class="">OFF</button>
-            <button id="green_on" class="">ON</button>
-            <br>
-            <button id="blue_off" class="">OFF</button>
-            <button id="blue_on" class="">ON</button>
-            <br>
-            <button id="red_off" class="">OFF</button>
-            <button id="red_on" class="">ON</button>
-            <hr>
-            Websocket status:
-            <br>
-            <div id="ws-status"> Waiting... </div>
+            </div>
         </div>
+
 
         <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
