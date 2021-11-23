@@ -102,3 +102,8 @@ h3 {
     padding: 1rem;
     font-size: 1.6rem;
 }
+
+.iframe-height {
+    height: 100%;
+    overflow: hidden;
+}
