@@ -7,15 +7,10 @@
     <title> Blade Link Intercom</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ static_url("bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{ static_url("app.css")}}">
-
-
-
 
 </head>
 
@@ -35,38 +30,7 @@
                 <h3>Director</h3>
                 <div class="col-4 mb-2">
                     <div class="card p-3">
-                        <h2>TalkLink Pro</h2>
-                        <h4> IP: 192.168.155.25</h4>
-                        <hr>
-                        <h4 class="mt-2">Volumen</h4>
-                        <div class="d-flex">
-                            <div>
-                                <label>Mic</label>
-                                <input type="range" class="w-50 mx-2" id="micRange1">
-                            </div>
-                            <div>
-                                <label>Aur</label>
-                                <input type="range" class="w-50 mx-2" id="speakerRange1">
-                            </div>
-                           
-                        </div>
-                        <div class="mt-1">
-                            <button id="sound_set" class="btn btn-secondary w-25 mx-2">Guardar niveles</button>
-                        </div>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Color de grupo</h4>
-                        <div class="d-flex">
-                            <button id="green_on" class="btn btn-success w-25 mx-2">ON</button>
-                            <button id="blue_on" class="btn btn-primary w-25 mx-2">ON</button>
-                            <button id="red_on" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-
-                        <div id="ws-status"> Waiting... </div>
+                    <iframe src="http://192.168.155.25:8080/"></iframe>
                     </div>
                 </div>
             </div>
@@ -74,104 +38,27 @@
                 <h3>Estaciones de trabajo</h3>
                 <div class="col-4 mb-2">
                     <div class="card p-3">
-                        <h2>TalkLink A </h2>
-                        <h4> IP: 192.168.155.20</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_1" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Color de grupo</h4>
-                        <div class="d-flex">
-                            <button id="green_on_1" class="btn btn-success w-25 mx-2">ON</button>
-                            <button id="blue_on_1" class="btn btn-primary w-25 mx-2">ON</button>
-                            <button id="red_on_1" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_1" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-
-                        <div id="ws-status-1"> Waiting... </div>
+                         <iframe src="http://192.168.155.20:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-4 mb-2">
                     <div class="card p-3">
-                        <h2>TalkLink B</h2>
-                        <h4> IP: 192.168.155.21</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_2" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Color de grupo</h4>
-                        <div class="d-flex">
-                            <button id="green_on_2" class="btn btn-success w-25 mx-2">ON</button>
-                            <button id="blue_on_2" class="btn btn-primary w-25 mx-2">ON</button>
-                            <button id="red_on_2" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_2" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-
-                        <div id="ws-status-2"> Waiting... </div>
+                         <iframe src="http://192.168.155.21:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-4 mb-2">
                     <div class="card p-3">
-                        <h2>TalkLink C</h2>
-                        <h4> IP: 192.168.155.22</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_3" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Color de grupo</h4>
-                        <div class="d-flex">
-                            <button id="green_on_3" class="btn btn-success w-25 mx-2">ON</button>
-                            <button id="blue_on_3" class="btn btn-primary w-25 mx-2">ON</button>
-                            <button id="red_on_3" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_3" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-
-                        <div id="ws-status-3"> Waiting... </div>
+                         <iframe src="http://192.168.155.22:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-4 mb-2">
                     <div class="card p-3">
-                        <h2>TalkLink D</h2>
-                        <h4> IP: 192.168.155.23</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_4" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Color de grupo</h4>
-                        <div class="d-flex">
-                            <button id="green_on_4" class="btn btn-success w-25 mx-2">ON</button>
-                            <button id="blue_on_4" class="btn btn-primary w-25 mx-2">ON</button>
-                            <button id="red_on_4" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_4" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-                        <div id="ws-status-4"> Waiting... </div>
+                        <iframe src="http://192.168.155.23:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-4 mb-2">
                     <div class="card p-3">
-                        <h2>TalkLink E</h2>
-                        <h4> IP: 192.168.155.24</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_5" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Color de grupo</h4>
-                        <div class="d-flex">
-                            <button id="green_on_5" class="btn btn-success w-25 mx-2">ON</button>
-                            <button id="blue_on_5" class="btn btn-primary w-25 mx-2">ON</button>
-                            <button id="red_on_5" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_5" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-                        <div id="ws-status-5"> Waiting... </div>
+                        <iframe src="http://192.168.155.24:8080/"></iframe>
                     </div>
                 </div>
             </div>
@@ -179,82 +66,21 @@
                 <h3>Cámaras</h3>
                 <div class="col-3 mb-2">
                     <div class="card p-3">
-                        <h2>SpotLink A</h2>
-                        <h4> IP: 192.168.155.30</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_6" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Control Tally</h4>
-                        <div class="d-flex">
-                            <button id="green_on_6" class="btn btn-success w-25 mx-2">ON</button>
-
-                            <button id="red_on_6" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_6" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-                        <div id="ws-status-6"> Waiting... </div>
+                       <iframe src="http://192.168.155.30:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-3 mb-2">
                     <div class="card p-3">
-                        <h2>SpotLink B</h2>
-                        <h4> IP: 192.168.155.31</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_7" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Control Tally</h4>
-                        <div class="d-flex">
-                            <button id="green_on_7" class="btn btn-success w-25 mx-2">ON</button>
-
-                            <button id="red_on_7" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_7" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-                        <div id="ws-status-7"> Waiting... </div>
+                        <iframe src="http://192.168.155.31:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-3 mb-2">
                     <div class="card p-3">
-                        <h2>SpotLink C</h2>
-                        <h4> IP: 192.168.155.32</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_8" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Control Tally</h4>
-                        <div class="d-flex">
-                            <button id="green_on_8" class="btn btn-success w-25 mx-2">ON</button>
-
-                            <button id="red_on_8" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_8" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-                        <div id="ws-status-8"> Waiting... </div>
+                        <iframe src="http://192.168.155.32:8080/"></iframe>
                     </div>
                 </div>
                 <div class="col-3 mb-2">
-                    <div class="card p-3">
-                        <h2>SpotLink D</h2>
-                        <h4>IP: 192.168.155.33</h4>
-                        <hr>
-                        <h4 class="mt-3">Reiniciar Dispositivo</h4>
-                        <button id="reboot_9" class="btn btn-info w-25 mx-2">Reboot</button>
-                        <h4 class="mt-2">Control Tally</h4>
-                        <div class="d-flex">
-                            <button id="green_on_9" class="btn btn-success w-25 mx-2">ON</button>
-
-                            <button id="red_on_9" class="btn btn-danger w-25 mx-2">ON</button>
-                            <button id="off_9" class="btn btn-secondary w-25 mx-2">OFF</button>
-                        </div>
-
-                        <hr>
-
-                        <div id="ws-status-9"> Waiting... </div>
+                     <iframe src="http://192.168.155.33:8080/"></iframe>
                     </div>
                 </div>
 
